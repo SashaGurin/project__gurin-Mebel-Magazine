@@ -2,8 +2,8 @@
 
 
 body {
-    font-family: $primery-font;
-    font-size: 16px;
+    font-family:$primery-font-rubik;
+    font-size: 14px;
     font-weight: 400;
     color: $primerycolor-black;
     background-color: $primerycolor-white;
@@ -11,16 +11,11 @@ body {
 
   .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1170px;
     padding: 0px 15px;
     margin: 0 auto;
   }
 
   .btn {
-    line-height: 19px;
-    color: $primerycolor-white;
-    padding: 13px 30px;
-    background: $primerycolor-orange;
-    border-radius: 5px;
-    cursor: pointer;
+
   }
