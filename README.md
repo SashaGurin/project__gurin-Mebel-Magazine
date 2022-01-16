@@ -1,5 +1,4 @@
-# gulp-boilerplate
+# gulp-Start
 ## Запустить команду -npm ci
-## Чтобы запустить процесс
- -gulp
- upt
+## Чтобы запустить 
+ 
