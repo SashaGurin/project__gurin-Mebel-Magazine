@@ -18,21 +18,22 @@ header.header
                //- пересмотреть форму поиска
                .header__midle-search
                   form(action="#").header-form.form
-                     input(type="search").form-search
-                     select#select(name="header").form-select
-                        option(value="Categories" selected) Categories
-                        option(value="item_2") item_2
-                        option(value="item_3") item_3
-                        option(value="item_4") item_4
+                     input(type="search" placeholder="Search here").form-search
+                     .box-select
+                        select#select(name="header").form-select
+                           option(value="Categories" selected) Categories
+                           option(value="item_2") item_2
+                           option(value="item_3") item_3
+                           option(value="item_4") item_4
                      input(type="button").form-btn
 
                .header__midle-cabinet.cabinet
                   a.cabinet__link(href="#")
-                     img.cabinet__img(src="", alt="картинка")
+                     img.cabinet__img(src="assets/imgs/header-case.svg", alt="картинка")
                   a.cabinet__link(href="#")
-                     img.cabinet__img(src="", alt="картинка")
+                     img.cabinet__img(src="assets/imgs/header-Notific.svg", alt="картинка")
                   a.cabinet__link(href="#")
-                     img.cabinet__img(src="", alt="картинка")
+                     img.cabinet__img(src="assets/imgs/header-avatar.svg", alt="картинка")
 
       .header__bottom
          .container

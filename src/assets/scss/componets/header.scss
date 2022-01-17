@@ -1,9 +1,32 @@
 @import "../main/vars";
 
 // Header.................................
+
+/*logo..................*/
+.logo {
+  a {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $primerycolor-black;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      width: 32px;
+      height: 39px;
+      display: inline-block;
+      background-image: url(/assets/imgs/logo.svg);
+      background-repeat: no-repeat;
+      margin-right: 5px;
+    }
+  }
+}
+
+/*Header..................*/
 .header {
   &__top {
-    background:$primerycolor-green;
+    background: $primerycolor-green;
     padding: 16px 0px 15px;
     &-iner {
       display: flex;
@@ -11,7 +34,7 @@
       justify-content: space-between;
       .header__top-left {
         p {
-          color:$primerycolor-white ;
+          color: $primerycolor-white;
           line-height: 19px;
           font-size: 16px;
         }
@@ -20,7 +43,7 @@
         display: flex;
         align-items: center;
         a {
-          color:$primerycolor-white ;
+          color: $primerycolor-white;
           line-height: 19px;
           font-size: 16px;
         }
@@ -35,7 +58,7 @@
           align-items: center;
         }
         .header__top-right_login::before {
-          content: '';
+          content: "";
           display: inline-block;
           width: 2.2px;
           height: 19px;
@@ -43,20 +66,109 @@
           border-radius: 0.4px;
           margin-right: 20px;
           margin-left: 20px;
-
-
         }
-
-
-
       }
     }
   }
   &__midle {
-    background:$primerycolor-white;
-  }
-  &__bottom {
-    background: $primerycolor-header-bottom;
-  }
+    background: $primerycolor-white;
+    .header__midle-iner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 21px 0px;
+      .header__midle-search {
+        width: 582px;
+        .header-form.form {
+          position: relative;
+          min-height: 46px;
+          .form-search {
+            width: 100%;
+            padding: 14px 200px 13px 25px;
+            border: 2px solid  $primerycolor-green;
+            border-radius: 8px;
+            color: #B0B0B0;
+            height: 100%;
+            line-height: 17px;
+              &::placeholder {
+                color: #B0B0B0;
+                line-height: 17px;
+              }
+          }
+          .box-select {
+            position: absolute;
+            right: 55px;
+            top: 0;
+            padding-right: 21px;
+            min-width: 121px;
+            height: 100%;
+            background: $primerycolor-white;
+            border-left: 1.5px solid rgba(227, 227, 227, 0.78);
+            border-top: 2px solid  $primerycolor-green;
+            border-bottom: 2px solid  $primerycolor-green;
 
+            .form-select {
+              height: 100%;
+              padding-left: 10px;
+              width: 100%;
+              border: 0;
+              outline: 0;
+              margin-right: 13px;
+              font-family: Rubik;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 17px;
+              color: $primerycolor-black;
+            }
+          }
+          .form-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 55px;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            background: $primerycolor-green;
+            background-image: url(/assets/imgs/search.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 0px 7px 6px 0px;
+          }
+        }
+      }
+      .header__midle-cabinet.cabinet {
+        .cabinet__link {
+          &:nth-child(2) {
+            margin-right: 21px;
+          }
+          &:nth-child(1)::after {
+            content: '4';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $primerycolor-green;
+            color: $primerycolor-white;
+            font-size: 7px;
+            line-height: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: top;
+            position: relative;
+            right: 5px;
+            top: 5px;
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
 }
+
+// &__bottom {
+//   background: $primerycolor-header-bottom;
+// }
