@@ -79,6 +79,7 @@
       padding: 21px 0px;
       .header__midle-search {
         width: 582px;
+        padding: 0px 30px;
         .header-form.form {
           position: relative;
           min-height: 46px;
@@ -93,6 +94,10 @@
               &::placeholder {
                 color: #B0B0B0;
                 line-height: 17px;
+              }
+              &:focus-visible {
+                border-color:  $primerycolor-green;
+                outline: none;
               }
           }
           .box-select {
@@ -167,8 +172,58 @@
       }
     }
   }
+
+  &__bottom {
+    background: $primerycolor-header-bottom;
+    .header__bottom-iner {
+      display: flex;
+      align-items: center;
+      height: 67px;
+      .name__collection {
+        background: $primerycolor-green;
+        padding: 0px 10px;
+        height: 100%;
+        max-width: 260px;
+        width: 100%;
+        .name-text {
+          min-height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $primerycolor-white;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.02em;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url(/assets/imgs/header-bottom-menu.svg);
+            background-repeat: no-repeat;
+            margin-right: 20px;
+          }
+        }
+
+
+      }
+      .header__nav.nav {
+        .nav-list {
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          padding-left: 82px;
+          .nav-item:not(:last-child) {
+            margin-right: 65px;
+
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
-// &__bottom {
-//   background: $primerycolor-header-bottom;
-// }
