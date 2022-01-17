@@ -172,7 +172,6 @@
       }
     }
   }
-
   &__bottom {
     background: $primerycolor-header-bottom;
     .header__bottom-iner {
@@ -215,7 +214,14 @@
           padding-left: 82px;
           .nav-item:not(:last-child) {
             margin-right: 65px;
-
+            .nav-link {
+              font-family: Rubik;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 17px;
+              color: $primerycolor-black;
+            }
           }
         }
       }
