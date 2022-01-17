@@ -46,6 +46,9 @@
           color: $primerycolor-white;
           line-height: 19px;
           font-size: 16px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
         .header__top-right_lang {
           img {
@@ -86,19 +89,19 @@
           .form-search {
             width: 100%;
             padding: 14px 200px 13px 25px;
-            border: 2px solid  $primerycolor-green;
+            border: 2px solid $primerycolor-green;
             border-radius: 8px;
-            color: #B0B0B0;
+            color: #b0b0b0;
             height: 100%;
             line-height: 17px;
-              &::placeholder {
-                color: #B0B0B0;
-                line-height: 17px;
-              }
-              &:focus-visible {
-                border-color:  $primerycolor-green;
-                outline: none;
-              }
+            &::placeholder {
+              color: #b0b0b0;
+              line-height: 17px;
+            }
+            &:focus-visible {
+              border-color: $primerycolor-green;
+              outline: none;
+            }
           }
           .box-select {
             position: absolute;
@@ -109,8 +112,8 @@
             height: 100%;
             background: $primerycolor-white;
             border-left: 1.5px solid rgba(227, 227, 227, 0.78);
-            border-top: 2px solid  $primerycolor-green;
-            border-bottom: 2px solid  $primerycolor-green;
+            border-top: 2px solid $primerycolor-green;
+            border-bottom: 2px solid $primerycolor-green;
 
             .form-select {
               height: 100%;
@@ -150,7 +153,7 @@
             margin-right: 21px;
           }
           &:nth-child(1)::after {
-            content: '4';
+            content: "4";
             display: inline-block;
             width: 12px;
             height: 12px;
@@ -195,8 +198,9 @@
           font-size: 16px;
           line-height: 19px;
           letter-spacing: 0.02em;
+          text-align: center;
           &::before {
-            content: '';
+            content: "";
             display: inline-block;
             width: 24px;
             height: 24px;
@@ -212,15 +216,21 @@
           align-items: center;
           text-transform: uppercase;
           padding-left: 82px;
+          margin-right: 148px;
           .nav-item:not(:last-child) {
             margin-right: 65px;
-            .nav-link {
-              font-family: Rubik;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 17px;
-              color: $primerycolor-black;
+          }
+          .nav-link {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: $primerycolor-black;
+            transition: color 0.15s linear;
+            white-space: pre;
+            &:hover {
+              color: $primerycolor-green;
             }
           }
         }
@@ -228,4 +238,3 @@
     }
   }
 }
-
