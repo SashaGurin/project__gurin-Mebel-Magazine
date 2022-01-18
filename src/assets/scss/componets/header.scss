@@ -88,12 +88,13 @@
           min-height: 46px;
           .form-search {
             width: 100%;
-            padding: 14px 200px 13px 25px;
+            padding: 14px 200px 14px 25px;
             border: 2px solid $primerycolor-green;
             border-radius: 8px;
             color: #b0b0b0;
             height: 100%;
             line-height: 17px;
+            transition: all 0.2s linear;
             &::placeholder {
               color: #b0b0b0;
               line-height: 17px;
@@ -101,6 +102,9 @@
             &:focus-visible {
               border-color: $primerycolor-green;
               outline: none;
+            }
+            &:hover {
+              box-shadow:0 0 15px 4px rgba(0,0,0,0.09);
             }
           }
           .box-select {
@@ -216,7 +220,7 @@
           align-items: center;
           text-transform: uppercase;
           padding-left: 82px;
-          margin-right: 148px;
+          margin-right: 168px;
           .nav-item:not(:last-child) {
             margin-right: 65px;
           }

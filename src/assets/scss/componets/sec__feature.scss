@@ -1,3 +1,31 @@
 @import "../main/vars";
 
-
+.feature {
+  padding: 65px 0px 70px;
+  .feature__iner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    .feature__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // flex: 1 0 auto;
+      .feature__title-box {
+        margin-left: 15px;
+        .feature__title {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 26px;
+        }
+        .feature__text {
+          font-size: 14px;
+          line-height: 26px;
+          color: rgba(81, 81, 81, 0.71);
+        }
+      }
+    }
+  }
+}
