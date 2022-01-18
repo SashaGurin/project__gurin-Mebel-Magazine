@@ -1,13 +1,25 @@
-include ../mixins/item
-section.passion
+include ../mixins/item_offer
+section.offer
   .container
-    .title__box
-      span.span__bg Features
-      h2.title__bg Food with a New Passion
-    .feature
-      +item("assets/imgs/home.svg","Quality Food","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")
-      +item("assets/imgs/moto.svg","Food Delivery","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")(class="moto")
-      +item("assets/imgs/sun.svg","Super Taste","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")(class="sun")
+    .offer__iner
+      .offer__iner-left
+        +item_offer("Modern Furniture Collections","Starting from $500","Read more")
+
+      .offer__iner-right
+          +item_offer("Geometric Bookcase","Up to 20% discount","Read more")(class="offer__item-2")
+          +item_offer("Minimal Sofa collections ","Sale upto 40% discount","Read more")(class="offer__item-3")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

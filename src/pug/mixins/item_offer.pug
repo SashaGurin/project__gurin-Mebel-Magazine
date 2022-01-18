@@ -1,0 +1,7 @@
+mixin item_offer(title,subtitle,text)
+  .offer__item(class!=attributes.class)
+    //- img.offer-img(src=img, alt="картинка")
+    h3.offer__title=title
+    span.subtitle=subtitle
+    a(href="#").offer__text=text
+

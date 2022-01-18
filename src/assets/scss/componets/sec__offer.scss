@@ -1,2 +1,97 @@
 @import "../main/vars";
+.offer {
+  padding-bottom: 120px;
+  .offer__iner {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: 19px;
+    width: 100%;
+    height: 511px;
+    .offer__title {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: $primerycolor-black;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: $primerycolor-green;
+    }
+    .offer__text {
+      margin-top: 8px;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: #757575;
+      &::after {
+        content: '\2192';
+        display: inline-block;
+        font-size: 15px;
+        vertical-align: top;
+        margin-left: 4px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
+    .offer__iner-left {
+      flex: 0 1 auto;
+      max-width: 650px;
+      width: 100%;
+      .offer__item {
+        padding: 49px 31px;
+        background-image: url(/assets/imgs/offer-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        height: 100%;
+        .offer__title {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .offer__text {
+          display: inherit;
+          margin-top: 10px;
+        }
+      }
+    }
+    .offer__iner-right {
+      flex: 1 0 auto;
+      .offer__item-2 {
+        padding: 52px 24px;
+        background-image: url(/assets/imgs/offer-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        height: 48%;
+        margin-bottom: 19px;
+        .offer__text {
+          display: inherit;
+        }
+      }
+      .offer__item-3 {
+        padding: 52px 24px;
+        background-image: url(/assets/imgs/offer-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        height: 48%;
+        .offer__text {
+          display: inherit;
+        }
+      }
+    }
+  }
+}
