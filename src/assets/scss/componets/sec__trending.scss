@@ -42,9 +42,9 @@
       // max-width: 100%;
       // пересмотреть эту часть ниже ........................
       margin-bottom: 10px;
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
+      // &:not(:last-child) {
+      //   margin-right: 10px;
+      // }
       // flex: 1 0 25%;
     }
     .trending__img-box {
@@ -72,6 +72,12 @@
         text-align: center;
         letter-spacing: 0.008em;
       }
+      .status-span.span-green {
+        background: $primerycolor-green;
+      }
+
+
+
     }
     .trending__title-box {
       // width: 100%;

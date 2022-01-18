@@ -2,7 +2,7 @@ mixin item_trending(img,status,subtitle,title,ne,old,count)
   .trending__item
     .trending__img-box
       img(src=img,alt="картинка")
-      span.status-span=status
+      span.status-span(class!=attributes.class)=status
     .trending__info
       .trending__title-box
         span.trending-span=subtitle
