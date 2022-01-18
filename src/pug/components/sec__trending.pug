@@ -1,0 +1,18 @@
+include ../mixins/item_trending
+.trending
+  .container
+    .section__title-box.trending__title
+      h2.section__title TREnDInG
+      nav.section__menu
+        ul.section__list
+          li.section__item
+            a.section__link Top Products
+          li.section__item
+            a.section__link New Arrivals
+          li.section__item
+            a.section__link Best Sellers
+    .trending__wrapper
+      +item_trending("/assets/imgs/trending-1.jpg","Chair","Minimal LCD chair","$180","$250","5")
+
+
+

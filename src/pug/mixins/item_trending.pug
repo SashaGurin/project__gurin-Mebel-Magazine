@@ -1,17 +1,19 @@
-mixin item_trending(img,subtitle,title,text,text,count)
-  .feature__item.item
-    .feature__img-box
+mixin item_trending(img,subtitle,title,ne,old,count)
+  .trending__item.item
+    .trending__img-box
       img(src=img,alt="картинка")
-    .feature__info
-      .feature__title-box
-        span.middle-title.feature-span=subtitle
-         h3.middle-title.feature-title=title
+    .trending__info
+
+      .trending__title-box
+        span.middle-title.trending-span=subtitle
+        h4.middle-title.trending-title=title
+
       .rating__box
         .reting__box-price
           .price-new
-            p=text
+            p=ne
           .price-old
-            p=text
+            p=old
         .reting__box-stars
           .rating(data-rating=count)
             .rating__star
