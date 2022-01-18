@@ -1,2 +1,178 @@
 @import "../main/vars";
 
+.section__title-box {
+  text-align: center;
+  .section__title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: $primerycolor-black;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  .section__menu {
+    margin-bottom: 73px;
+    .section__list {
+      display: flex;
+      justify-content: center;
+      .section__item {
+        margin: 0px 35px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #c2c2c2;
+        transition: color 0.2s linear;
+        &:hover {
+          color: $primerycolor-green;
+        }
+      }
+    }
+  }
+}
+.trending {
+  .trending__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .trending__item {
+      // max-width: 100%;
+      // пересмотреть эту часть ниже ........................
+      margin-bottom: 10px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      // flex: 1 0 25%;
+    }
+    .trending__img-box {
+      margin-bottom: 15px;
+      position: relative;
+      // width: 100%;
+      img {
+        max-width: 100%;
+      }
+      .status-span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 45px;
+        height: 20px;
+        background: #00b7f1;
+        border-radius: 0px 0px 5px 0px;
+        color: $primerycolor-white;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.008em;
+      }
+    }
+    .trending__title-box {
+      // width: 100%;
+      .trending-span {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.008em;
+        text-transform: uppercase;
+        color: rgba(117, 117, 117, 0.71);
+      }
+      .trending-title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        color: $primerycolor-black;
+        margin-bottom: 13px;
+        margin-top: 4px;
+      }
+    }
+    .rating__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .reting__box-price {
+        display: flex;
+        font-family: Mulish;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        .price-new {
+          font-weight: bold;
+          color: $primerycolor-green;
+        }
+        .price-old {
+          font-weight: 600;
+          text-decoration-line: line-through;
+          color: #cccccc;
+          margin-left: 7px;
+        }
+      }
+      .reting__box-stars {
+        display: flex;
+        align-items: center;
+        .rating {
+          display: flex;
+          &__star {
+            height: 16px;
+            width: 16px;
+            background-image: url(/assets/imgs/star-gray.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        [data-rating="1"] .rating__star:nth-child(1) {
+          background-image: url(/assets/imgs/star-green.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        [data-rating="2"] .rating__star {
+          &:nth-child(1),
+          &:nth-child(2) {
+            background-image: url(/assets/imgs/star-green.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        [data-rating="3"] .rating__star {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            background-image: url(/assets/imgs/star-green.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        [data-rating="4"] .rating__star {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            background-image: url(/assets/imgs/star-green.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        [data-rating="5"] .rating__star {
+          background-image: url(/assets/imgs/star-green.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
