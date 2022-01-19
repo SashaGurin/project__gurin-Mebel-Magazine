@@ -33,17 +33,36 @@
     }
   }
 }
+.reting__box-price {
+  display: flex;
+  font-family: Mulish;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  .price-new {
+    font-weight: bold;
+    color: $primerycolor-green;
+  }
+  .price-old {
+    font-weight: 600;
+    text-decoration-line: line-through;
+    color: #cccccc;
+    margin-left: 7px;
+  }
+}
 .trending {
   .trending__wrapper {
     display: flex;
     // justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px -30px;
-    margin-bottom: -30px;
+    // margin-bottom: -45px;
+
     .trending__column {
       flex: 0 1 25%;
       padding: 0 15px;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
       @media (max-width:995px) {
         flex: 0 1 33% ;
       }
@@ -100,30 +119,13 @@
           color: $primerycolor-black;
           margin-bottom: 13px;
           margin-top: 4px;
+          max-width: 192px;
         }
       }
       .rating__box {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .reting__box-price {
-          display: flex;
-          font-family: Mulish;
-          font-style: normal;
-          font-size: 18px;
-          line-height: 120%;
-          letter-spacing: 0.005em;
-          .price-new {
-            font-weight: bold;
-            color: $primerycolor-green;
-          }
-          .price-old {
-            font-weight: 600;
-            text-decoration-line: line-through;
-            color: #cccccc;
-            margin-left: 7px;
-          }
-        }
         .reting__box-stars {
           display: flex;
           align-items: center;

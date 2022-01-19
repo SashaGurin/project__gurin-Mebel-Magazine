@@ -1,0 +1,14 @@
+mixin item_special(title,subtitle,ne,old,btn,text1,text2)
+  .special__item
+    h3.special__title=title
+    p.special-subtitle=subtitle
+    .special__price-box.reting__box-price
+      .price-new
+        p=ne
+      .price-old
+        p=old
+      a(href="#").special__price-btn.slide-btn=btn
+    .special__time-box
+      p.special__time-box_text-1=text1
+      p.special__time-box_text-2=text2
+
