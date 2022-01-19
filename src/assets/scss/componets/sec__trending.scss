@@ -51,7 +51,9 @@
     margin-left: 7px;
   }
 }
+
 .trending {
+
   .trending__wrapper {
     display: flex;
     // justify-content: center;
@@ -95,6 +97,9 @@
         }
         .status-span.span-green {
           background: $primerycolor-green;
+        }
+        .status-span.span-red {
+          background: #FF6868;
         }
       }
       .trending__title-box {
@@ -184,4 +189,10 @@
     }
 
   }
+}
+.trending.ourproducts {
+  .trending__wrapper.ourproducts
+   .trending-title {
+    color: #11142D;
+    }
 }
