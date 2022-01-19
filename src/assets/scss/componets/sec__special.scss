@@ -1,15 +1,29 @@
 @import "../main/vars";
 .special {
+  padding-bottom: 120px;
+  .special__title {
+    margin-bottom: 60px;
+    margin-top: 99px;
+  }
   .special__iner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // gap: 30px;
+    // flex-wrap: wrap;
+    margin: 0 -15px;
   }
   .special__item {
+    flex: 0 1 50%;
     padding: 29px 30px 29px 24px;
     font-family: Mulish;
     font-style: normal;
+    background-image: url(/assets/imgs/special-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 15px;
     .special__title {
+      width: 227px;
       font-weight: 600;
       font-size: 22px;
       line-height: 28px;
@@ -17,6 +31,7 @@
       margin-bottom: 11px;
     }
     .special-subtitle {
+      width: 227px;
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
@@ -28,11 +43,46 @@
       align-items: center;
       margin-bottom: 29px;
     }
-    .special__price-btn{
+    .special__price-btn {
       font-size: 12px;
       line-height: 15px;
       padding: 7px 10px;
+      margin-left: 29px;
+    }
+    .special__time-box {
+      display: flex;
+      align-items: center;
+      .special__time-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $primerycolor-green;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        color: $primerycolor-white;
+
+        &:not(:last-child) {
+          margin-right: 18px;
+        }
+        .special__time-box_text-1 {
+          font-weight: 500;
+          font-size: 14px;
+          margin-bottom: 2px;
+        }
+        .special__time-box_text-2 {
+          font-size: 6px;
+          letter-spacing: 0.005em;
+          text-transform: uppercase;
+        }
+      }
     }
   }
-
+  .special__item.special__item-2 {
+    background-image: url(/assets/imgs/special-2.jpg);
+  }
 }

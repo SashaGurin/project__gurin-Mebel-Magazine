@@ -1,5 +1,5 @@
-mixin item_special(title,subtitle,ne,old,btn,text1,text2)
-  .special__item
+mixin item_special(title,subtitle,ne,old,btn,text1,text2,text3,text4,text5,text6,text7,text8)
+  .special__item(class!=attributes.class)
     h3.special__title=title
     p.special-subtitle=subtitle
     .special__price-box.reting__box-price
@@ -9,6 +9,17 @@ mixin item_special(title,subtitle,ne,old,btn,text1,text2)
         p=old
       a(href="#").special__price-btn.slide-btn=btn
     .special__time-box
-      p.special__time-box_text-1=text1
-      p.special__time-box_text-2=text2
+      .special__time-item
+        p.special__time-box_text-1=text1
+        p.special__time-box_text-2=text2
+      .special__time-item
+        p.special__time-box_text-1=text3
+        p.special__time-box_text-2=text4
+      .special__time-item
+        p.special__time-box_text-1=text5
+        p.special__time-box_text-2=text6
+      .special__time-item
+        p.special__time-box_text-1=text7
+        p.special__time-box_text-2=text8
+
 
