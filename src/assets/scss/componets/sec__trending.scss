@@ -1,5 +1,4 @@
 @import "../main/vars";
-
 .section__title-box {
   text-align: center;
   .section__title {
@@ -51,12 +50,10 @@
     margin-left: 7px;
   }
 }
-
 .trending {
-
   .trending__wrapper {
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px -30px;
     // margin-bottom: -45px;
@@ -68,9 +65,9 @@
       @media (max-width:995px) {
         flex: 0 1 33% ;
       }
-      .trending__item {
+      // .trending__item {
 
-      }
+      // }
       .trending__img-box {
         margin-bottom: 15px;
         position: relative;

@@ -1,0 +1,8 @@
+mixin item_blog(tag,data,title,text)
+ .blogs__columns
+  .blogs__item(class!=attributes.class)
+    .blogs__subtitle
+      p.blogs__subtitle-tag=tag
+      time(datetime="=23 September 2022").blogs__subtitle-data=data
+    h3.blogs__title=title
+    a(href="#").blogs__btn=text

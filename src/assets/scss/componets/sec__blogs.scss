@@ -1,0 +1,119 @@
+@import "../main/vars";
+.blogs {
+  padding-top: 115px;
+  .section__title-box.blogs__title {
+    .section__title {
+      margin-bottom: 56px;
+    }
+  }
+  .blogs__iner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -13px;
+    margin-bottom: -22px;
+    .blogs__columns {
+      padding: 0 13px;
+      flex: 0 1 50%;
+      margin-bottom: 22px;
+    }
+    .blogs__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px 10px 30px 44px;
+      height: 455px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(interior-dark-blue-wall-with-yellow-sofa-decor-living-room.jpg);
+      background-image: url(/assets/imgs/blogs-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      color: $primerycolor-white;
+      @media (max-width:995px) {
+        height: 355px;
+      }
+      .blogs__subtitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+        .blogs__subtitle-tag {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 130%;
+          letter-spacing: 0.008em;
+          text-transform: uppercase;
+          color: $primerycolor-green;
+          padding: 5px 13px 4px 28px;
+          margin-right: 5px;
+          background: #f8fafb;
+          border-radius: 3px;
+          display: flex;
+          align-items: center;
+          position: relative;
+          min-width: 83px;
+          max-height: 24px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            bottom: 4px;
+            width: 16px;
+            height: 16px;
+            background-image: url(/assets/imgs/tag-1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        .blogs__subtitle-data {
+          font-family: Mulish;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 130%;
+          letter-spacing: 0.008em;
+          color: $primerycolor-white;
+        }
+      }
+      .blogs__title {
+
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 120%;
+        letter-spacing: 0.005em;
+        color: $primerycolor-white;
+        max-width: 425px;
+        margin-bottom: 37px;
+        @media (max-width:995px) {
+          font-size: 30px;
+          margin-bottom: 27px;
+        }
+      }
+      .blogs__btn {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.008em;
+        color: $primerycolor-white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .blogs__item.blogs__item-2 {
+      background-image: url(/assets/imgs/blogs-2.jpg);
+    }
+    .blogs__item.blogs__item-3 {
+      background-image: url(/assets/imgs/blogs-3.jpg);
+    }
+    .blogs__item.blogs__item-4 {
+      background-image: url(/assets/imgs/blogs-4.jpg);
+    }
+  }
+}

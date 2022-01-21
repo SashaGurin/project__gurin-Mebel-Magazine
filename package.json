@@ -32,5 +32,8 @@
     "normalize.css": "^8.0.1",
     "sass": "^1.45.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "swiper": "^7.4.1"
   }
 }

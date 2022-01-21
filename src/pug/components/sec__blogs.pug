@@ -1,0 +1,12 @@
+include ../mixins/item_blog
+section.blogs
+  .container
+    .section__title-box.blogs__title
+      h2.section__title Our Latest Articles
+    .blogs__iner
+      +item_blog("Furniture","23 September 2022","Begineer guide buying minimal sofa","Read more")
+      +item_blog("TaBLE","23 September 2022","Buying best minimal computer table","Read more")(class="blogs__item-2")
+      +item_blog("Bench","23 March 2022","How to choose best modern bench","Read more")(class="blogs__item-3")
+      +item_blog("Chair","23 March 2022","Best Summer Outfit Style in this Country","Read more")(class="blogs__item-4")
+
+
