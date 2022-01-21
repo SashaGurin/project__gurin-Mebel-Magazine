@@ -152,6 +152,12 @@
       }
       .header__midle-cabinet.cabinet {
         .cabinet__link {
+          .cabinet__img {
+            transition: transform 0.2s linear;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
           &:nth-child(2) {
             margin-right: 21px;
           }
@@ -173,6 +179,9 @@
             right: 5px;
             top: 5px;
             margin-right: 14px;
+            &:hover {
+              transform: scale(1.3);
+            }
           }
         }
       }

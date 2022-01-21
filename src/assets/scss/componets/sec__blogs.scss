@@ -31,6 +31,10 @@
       background-position: center;
       border-radius: 8px;
       color: $primerycolor-white;
+      transition: all 0.3s linear;
+      &:hover {
+        box-shadow: 0 0 15px 4px rgb(0 0 0 / 30%);
+      }
       @media (max-width:995px) {
         height: 355px;
       }

@@ -27,6 +27,7 @@
         transition: color 0.2s linear;
         &:hover {
           color: $primerycolor-green;
+          cursor: pointer;
         }
       }
     }
@@ -65,9 +66,13 @@
       @media (max-width:995px) {
         flex: 0 1 33% ;
       }
-      // .trending__item {
-
-      // }
+      .trending__item {
+        transition: transform 0.2s linear;
+        &:hover {
+          transform: translate(0,-5%);
+          cursor: pointer;
+        }
+      }
       .trending__img-box {
         margin-bottom: 15px;
         position: relative;

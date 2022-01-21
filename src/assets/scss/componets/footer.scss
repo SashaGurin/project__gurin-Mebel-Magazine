@@ -1,27 +1,79 @@
 @import "../main/vars";
 // FOOTER ...................
 .footer {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  color: $primerycolor-black;
   .footer__top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 51px;
   }
-  .footer__contacts-text {
-    max-width: 318px;
-  }
-  .footer__social {
-    display: flex;
-  }
-  .footer__bottom {
-    border-top: 1px solid  #969696;
-    .footer__bootom-iner {
+  .footer__contacts {
+    .footer__contacts-text {
+      max-width: 318px;
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+    .footer__contacts-logo {
+      margin-bottom: 15px;
+    }
+    .footer__social {
       display: flex;
-      justify-content: space-between;
-      .footer__bottom-list {
-        display: flex;
-        align-items: center;
+      align-items: center;
+      padding-left: 11px;
+      .footer__social-item {
+        margin-right: 32px;
+        transition: transform 0.2s linear;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.41);
+        }
       }
     }
   }
-
-
+  .footer-menu__item {
+    .footer-menu__title {
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .footer-menu__list-link.menu-link {
+      letter-spacing: 0.01em;
+      color: $primerycolor-black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer__bottom {
+    border-top: 1px solid rgba($color: #969696, $alpha: 0.2);
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: $primerycolor-black;
+    .footer__bootom-iner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 33px 0px;
+      .footer__bottom-list {
+        display: flex;
+        align-items: center;
+        .footer__bottom-item {
+          margin-left: 53px;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }
