@@ -1,5 +1,27 @@
 @import "../main/vars";
 // FOOTER ...................
 .footer {
-
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
   }
+  .footer__contacts-text {
+    max-width: 318px;
+  }
+  .footer__social {
+    display: flex;
+  }
+  .footer__bottom {
+    border-top: 1px solid  #969696;
+    .footer__bootom-iner {
+      display: flex;
+      justify-content: space-between;
+      .footer__bottom-list {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+
+}
