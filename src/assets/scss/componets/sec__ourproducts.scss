@@ -1,51 +1,87 @@
 @import "../main/vars";
 .ourproducts__page-box.page__box {
-    margin-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .page__box-btn {
+    padding: 11px 29px 12px 20px;
+    display: inline-block;
+    background-color: $primerycolor-green;
+    color: $primerycolor-white;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    .page__box-btn  {
-        padding: 11px 53px 12px 20px ;
-        display: inline-block;
-        background-color:$primerycolor-green;
-        color: $primerycolor-white ;
-        font-family: Mulish;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        border-radius: 2px;
-        margin-right: 143px;
-        max-width: 161px;
+    border-radius: 2px;
+    margin-right: 143px;
+    max-width: 161px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: green;
     }
-    .page__box-number.number {
-        .number-text {
-            
-        }
-        .number-form {
-            display: flex;
-            align-items: center;
-        }
-        .number-input {
-            width: 58px;
-            height: 29px;
-            text-align: center;
-            margin-left: 9px;
-            margin-right: 19px;
-            background: #F8FAFB;
-            border: 1px solid #CCCCCC;
-            border-radius: 2px;
-
-            font-family: Mulish;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 130%;
-            letter-spacing: 0.008em;
-            color: #757575;
-        }
+    &::after {
+      content: "";
+      background-image: url(../imgs/arrow-page.svg);
+      width: 15px;
+      height: 14px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 10px;
     }
-
+  }
+  .page__box-number.number {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.008em;
+    color: #757575;
+    .number-form {
+      display: flex;
+      align-items: center;
+    }
+    .number-input {
+      width: 58px;
+      height: 29px;
+      text-align: center;
+      margin-left: 9px;
+      margin-right: 19px;
+      background: #f8fafb;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      font-family: Mulish;
+      font-size: 18px;
+      color: #757575;
+      outline: none;
+    }
+    .number-text {
+      margin-right: 23px;
+    }
+    .number-btn__box {
+      background: $primerycolor-green;
+      border-radius: 2px;
+      width: 58px;
+      height: 29px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      .mumber-btn {
+        outline: none;
+        border: none;
+        transition: transform 0.1s linear;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.22);
+        }
+      }
+    }
+  }
 }

@@ -11,6 +11,10 @@
   background: $primerycolor-green;
   padding: 10px 18px;
   border-radius: 5px;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: green;
+  }
 }
 .hero {
   .hero__iner {

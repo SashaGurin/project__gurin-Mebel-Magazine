@@ -143,10 +143,14 @@
             border: 0;
             outline: 0;
             background: $primerycolor-green;
-            background-image: url(/assets/imgs/search.svg);
+            background-image: url(../imgs/search.svg);
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 0px 7px 6px 0px;
+            transition: all 0.2s linear;
+            &:hover {
+              background-color: green;
+            }
           }
         }
       }
