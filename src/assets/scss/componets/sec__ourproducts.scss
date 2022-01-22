@@ -1,0 +1,51 @@
+@import "../main/vars";
+.ourproducts__page-box.page__box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .page__box-btn  {
+        padding: 11px 53px 12px 20px ;
+        display: inline-block;
+        background-color:$primerycolor-green;
+        color: $primerycolor-white ;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        margin-right: 143px;
+        max-width: 161px;
+    }
+    .page__box-number.number {
+        .number-text {
+            
+        }
+        .number-form {
+            display: flex;
+            align-items: center;
+        }
+        .number-input {
+            width: 58px;
+            height: 29px;
+            text-align: center;
+            margin-left: 9px;
+            margin-right: 19px;
+            background: #F8FAFB;
+            border: 1px solid #CCCCCC;
+            border-radius: 2px;
+
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.008em;
+            color: #757575;
+        }
+    }
+
+}
