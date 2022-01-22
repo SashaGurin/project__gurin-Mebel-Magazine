@@ -4,21 +4,20 @@ mixin item_trending(img,status,subtitle,title,ne,old,count)
       .trending__img-box
         img(src=img,alt="картинка")
         span.status-span(class!=attributes.class)=status
-      .trending__info
-        .trending__title-box
-          span.trending-span=subtitle
-          h4.trending-title=title
-        .rating__box
-          .reting__box-price
-            .price-new
-              p=ne
-            .price-old
-              p=old
-          .reting__box-stars
-            .rating(data-rating=count)
-              .rating__star
-              .rating__star
-              .rating__star
-              .rating__star
-              .rating__star
+      .trending__title-box
+        span.trending-span=subtitle
+        h4.trending-title=title
+      .rating__box
+        .reting__box-price
+          .price-new
+            p=ne
+          .price-old
+            p=old
+        .reting__box-stars
+          .rating(data-rating=count)
+            .rating__star
+            .rating__star
+            .rating__star
+            .rating__star
+            .rating__star
 

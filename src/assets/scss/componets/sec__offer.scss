@@ -59,7 +59,6 @@
         &:hover {
           transform: translate(0,-2%);
           box-shadow: 0 0 15px 4px rgb(0 0 0 / 9%);
-          cursor: pointer;
         }
         .offer__title {
           font-weight: 700;
@@ -84,7 +83,6 @@
         transition: transform  0.3s linear;
         &:hover {
           transform: translate(0,-2%);
-          cursor: pointer;
           box-shadow: 0 0 15px 4px rgb(0 0 0 / 9%);
         }
         .offer__text {
@@ -102,10 +100,10 @@
         &:hover {
           transform: translate(0,2%);
           box-shadow: 0 0 15px 4px rgb(0 0 0 / 9%);
-          cursor: pointer;
         }
         .offer__text {
           display: inherit;
+          cursor: pointer;
         }
       }
     }
