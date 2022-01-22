@@ -57,8 +57,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 -15px -30px;
-    // margin-bottom: -45px;
-
+    margin-bottom: -45px;
     .trending__column {
       flex: 0 1 25%;
       padding: 0 15px;
@@ -141,13 +140,13 @@
             &__star {
               height: 16px;
               width: 16px;
-              background-image: url(/assets/imgs/star-gray.svg);
+              background-image: url(../imgs/star-gray.svg);
               background-repeat: no-repeat;
               background-position: center;
             }
           }
           [data-rating="1"] .rating__star:nth-child(1) {
-            background-image: url(/assets/imgs/star-green.png);
+            background-image: url(../imgs/star-green.png);
             background-repeat: no-repeat;
             background-position: center;
           }
@@ -155,41 +154,38 @@
           [data-rating="2"] .rating__star {
             &:nth-child(1),
             &:nth-child(2) {
-              background-image: url(/assets/imgs/star-green.png);
+              background-image: url(../imgs/star-green.png);
               background-repeat: no-repeat;
               background-position: center;
             }
           }
-
           [data-rating="3"] .rating__star {
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
-              background-image: url(/assets/imgs/star-green.png);
+              background-image: url(../imgs/star-green.png);
               background-repeat: no-repeat;
               background-position: center;
             }
           }
-
           [data-rating="4"] .rating__star {
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
-              background-image: url(/assets/imgs/star-green.png);
+              background-image: url(../imgs/star-green.png);
               background-repeat: no-repeat;
               background-position: center;
             }
           }
           [data-rating="5"] .rating__star {
-            background-image: url(/assets/imgs/star-green.png);
+            background-image: url(../imgs/star-green.png);
             background-repeat: no-repeat;
             background-position: center;
           }
         }
       }
     }
-
   }
 }
 .trending.ourproducts {

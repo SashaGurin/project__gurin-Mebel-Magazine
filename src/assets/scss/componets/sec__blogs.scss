@@ -25,7 +25,7 @@
       height: 455px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(interior-dark-blue-wall-with-yellow-sofa-decor-living-room.jpg);
-      background-image: url(/assets/imgs/blogs-1.jpg);
+      background-image: url(../imgs/blogs-1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -83,7 +83,6 @@
         }
       }
       .blogs__title {
-
         font-family: Mulish;
         font-style: normal;
         font-weight: 600;
@@ -112,13 +111,13 @@
       }
     }
     .blogs__item.blogs__item-2 {
-      background-image: url(/assets/imgs/blogs-2.jpg);
+      background-image: url(../imgs/blogs-2.jpg);
     }
     .blogs__item.blogs__item-3 {
-      background-image: url(/assets/imgs/blogs-3.jpg);
+      background-image: url(../imgs/blogs-3.jpg);
     }
     .blogs__item.blogs__item-4 {
-      background-image: url(/assets/imgs/blogs-4.jpg);
+      background-image: url(../imgs/blogs-4.jpg);
     }
   }
 }
