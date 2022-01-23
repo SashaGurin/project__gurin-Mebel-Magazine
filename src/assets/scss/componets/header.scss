@@ -201,8 +201,7 @@
         background: $primerycolor-green;
         padding: 0px 10px;
         height: 100%;
-        max-width: 260px;
-        width: 100%;
+        min-width: 260px;
         @media (max-width:992px) {
           display: none;
         }
