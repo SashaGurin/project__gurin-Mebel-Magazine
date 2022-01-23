@@ -40,10 +40,12 @@
   }
   .footer-menu__item {
     margin-right: 20px;
+    @media(max-width:995px) {
+      flex: 0 1 25%;
+     }
     .footer-menu__title {
       font-weight: 500;
       letter-spacing: 0.01em;
-
     }
     .footer-menu__list-link.menu-link {
       letter-spacing: 0.01em;

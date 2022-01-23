@@ -6,6 +6,9 @@
 }
 .testimonials {
   padding-top: 120px;
+  @media(max-width:995px) {
+    padding-top: 70px;
+   }
   .testimonials__wrapper {
     text-align: center;
 

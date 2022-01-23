@@ -2,6 +2,10 @@
 .blogs {
   padding-top: 115px;
   padding-bottom: 100px;
+  @media(max-width:995px) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+   }
   .section__title-box.blogs__title {
     .section__title {
       margin-bottom: 56px;
@@ -12,14 +16,14 @@
     flex-wrap: wrap;
     margin: 0 -13px;
     margin-bottom: -22px;
-   
+
     .blogs__columns {
       padding: 0 13px;
       flex: 0 1 50%;
       margin-bottom: 22px;
       @media(max-width:767px) {
         flex: 0 1 100%;
-        
+
       }
     }
     .blogs__item {
