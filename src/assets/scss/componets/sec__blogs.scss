@@ -12,10 +12,15 @@
     flex-wrap: wrap;
     margin: 0 -13px;
     margin-bottom: -22px;
+   
     .blogs__columns {
       padding: 0 13px;
       flex: 0 1 50%;
       margin-bottom: 22px;
+      @media(max-width:767px) {
+        flex: 0 1 100%;
+        
+      }
     }
     .blogs__item {
       display: flex;

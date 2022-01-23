@@ -8,11 +8,15 @@
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
+    @media (max-width:992px) {
+      justify-content: center;
+    }
     .feature__item {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // flex: 1 0 auto;
+      // flex: 0 1 auto;
+      
       .feature__title-box {
         margin-left: 15px;
         .feature__title {
