@@ -5,7 +5,8 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     pug = require('gulp-pug'),
-    plumber = require('gulp-plumber')
+    plumber = require('gulp-plumber'),
+    concat = require('gulp-concat');
 
 
 function browsersync() {
@@ -26,6 +27,34 @@ function html() {
         .pipe(gulp.dest('build'))
         .on('end', browserSync.reload)
 }
+
+// функция js
+function js() {
+    return gulp.src('src/assets/js/app.js')
+        .pipe(gulp.dest('build/assets/js'))
+        .pipe(browserSync.stream())
+}
+
+// функция js модулей
+function vendorJS() {
+    return gulp.src([
+            'node_modules/swiper/swiper-bundle.min.js',
+        ])
+        .pipe(concat('vendors.min.js'))
+        .pipe(gulp.dest('build/assets/js'))
+        .pipe(browserSync.stream())
+}
+
+// функция css модулей  
+function vendorCSS() {
+    return gulp.src([
+        'node_modules/swiper/swiper-bundle.min.css',
+        ])
+        .pipe(concat('vendors.min.css'))
+        .pipe(gulp.dest('build/assets/css'))
+        .pipe(browserSync.stream())
+}
+
 
 function css() {
     return gulp.src('src/assets/scss/app.scss')
@@ -49,9 +78,10 @@ function watcher() {
     gulp.watch('src/assets/imgs/**/*', images)
     gulp.watch('src/assets/scss/**/*', css)
     gulp.watch('src/pug/**/*', html)
+    gulp.watch('src/assets/js/*.js', js)
 }
 
 gulp.task(
     'default',
-    gulp.parallel(browsersync, watcher, css, html, images)
+    gulp.parallel(browsersync, watcher, css, html, images,js,vendorJS, vendorCSS)
 );
