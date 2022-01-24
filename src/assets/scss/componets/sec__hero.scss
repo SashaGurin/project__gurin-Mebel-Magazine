@@ -80,11 +80,15 @@
               color: $primerycolor-green;
               margin-bottom: 6px;
               @media (max-width:1180px) {
-                font-size: 16px;
+                font-size: 18px;
                 text-align: center;
               }
               @media (max-width:992px) {
                 font-size: 17px;
+              }
+              @media (max-width:776px) {
+                font-size: 12px;
+
               }
 
             }
@@ -101,6 +105,11 @@
               @media (max-width:992px) {
                 font-size: 35px;
               }
+              @media (max-width:776px) {
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 18px;
+              }
             }
             .slide-text {
               font-family: Mulish;
@@ -112,6 +121,9 @@
               margin-bottom: 35px;
               @media (max-width:1180px) {
                 font-size: 18px;
+              }  @media (max-width:776px) {
+                font-size: 14px;
+                margin-bottom: 23px;
               }
             }
           }

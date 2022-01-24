@@ -12,10 +12,15 @@
     margin-bottom: 45px;
     @media(max-width:767px) {
      padding-top: 30px;
+     margin-bottom: 20px;
+     font-size: 30px;
     }
   }
   .section__menu {
     margin-bottom: 73px;
+    @media(max-width:776px) {
+      margin-bottom: 35px;
+     }
     .section__list {
       display: flex;
       justify-content: center;

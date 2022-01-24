@@ -6,9 +6,17 @@
     padding-top: 70px;
     padding-bottom: 80px;
    }
+   @media(max-width:776px) {
+    padding-top: 25px;
+    padding-bottom: 50px;
+   }
   .section__title-box.blogs__title {
     .section__title {
       margin-bottom: 56px;
+      @media(max-width:776px) {
+        margin-bottom: 46px;
+       }
+
     }
   }
   .blogs__iner {

@@ -4,6 +4,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media(max-width:776px) {
+    margin-top: 30px;
+   }
   .page__box-btn {
     padding: 11px 29px 12px 20px;
     display: inline-block;
