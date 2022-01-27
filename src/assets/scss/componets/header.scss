@@ -166,14 +166,14 @@
             margin-right: 21px;
           }
           &:nth-child(1)::after {
-            content: "4";
+            content: attr(data-count);
             display: inline-block;
             width: 12px;
             height: 12px;
             border-radius: 50%;
             background: $primerycolor-green;
             color: $primerycolor-white;
-            font-size: 7px;
+            font-size: 8px;
             line-height: 8px;
             display: inline-flex;
             align-items: center;
