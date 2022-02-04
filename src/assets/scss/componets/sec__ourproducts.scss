@@ -24,6 +24,15 @@
     max-width: 161px;
     cursor: pointer;
     transition: all 0.2s linear;
+    @media (max-width: 776px) {
+      margin-right: 90px;
+      font-size: 15px;
+      padding: 8px 15px 9px 10px;
+    }
+    @media (max-width:556px) {
+     display: none;
+    }
+
     &:hover {
       background-color: green;
     }
@@ -63,9 +72,15 @@
       font-size: 18px;
       color: #757575;
       outline: none;
+      @media (max-width:556px) {
+        margin-right: 13px;
+       }
     }
     .number-text {
       margin-right: 23px;
+      @media (max-width:556px) {
+        margin-right: 12px;
+       }
     }
     .number-btn__box {
       background: $primerycolor-green;

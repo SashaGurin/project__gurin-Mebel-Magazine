@@ -1,7 +1,7 @@
 @import "../main/vars";
 
 // Header.................................
-/*logo..................*/
+/*logo....*/
 .logo {
   a {
     font-weight: 500;
@@ -22,6 +22,13 @@
     }
   }
 }
+.header__midle-logo {
+  a {
+    @media (max-width: 655px) {
+      font-size: 18px;
+    }
+  }
+}
 /*Header..................*/
 .header {
   &__top {
@@ -36,6 +43,9 @@
           color: $primerycolor-white;
           line-height: 19px;
           font-size: 16px;
+          @media (max-width: 556px) {
+            display: none;
+          }
         }
       }
       .header__top-right {
@@ -79,6 +89,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 21px 0px;
+
       .header__midle-search {
         width: 582px;
         padding: 0px 30px;
@@ -94,6 +105,9 @@
             height: 100%;
             line-height: 17px;
             transition: all 0.2s linear;
+            @media (max-width: 655px) {
+              padding-right: 70px;
+            }
             &::placeholder {
               color: #b0b0b0;
               line-height: 17px;
@@ -117,6 +131,9 @@
             border-left: 1.5px solid rgba(227, 227, 227, 0.78);
             border-top: 2px solid $primerycolor-green;
             border-bottom: 2px solid $primerycolor-green;
+            @media (max-width: 655px) {
+              display: none;
+            }
 
             .form-select {
               height: 100%;
@@ -202,7 +219,7 @@
         padding: 0px 10px;
         height: 100%;
         min-width: 260px;
-        @media (max-width:992px) {
+        @media (max-width: 992px) {
           display: none;
         }
         .name-text {
